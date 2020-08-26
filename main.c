@@ -8,8 +8,8 @@ scanf("%f",&l1);
 printf("Enter L2 : ");
 scanf("%f",&l2);
 
-per = ((l2-l1)/l1)*100;
-printf("Percent = %0.00f % \n",per);
+per = ((l2-l1)/l2)*100;
+printf("Percent = %0.02f \n",per);
 
 
 if(per >=40 ){
@@ -21,7 +21,7 @@ if(per >=40 ){
   printf("Area is : %0.2f",area);
 
 }else{
-  printf("error");
+  printf("The program will run only when the percentage is greater than 40.");
 }
 
 }
