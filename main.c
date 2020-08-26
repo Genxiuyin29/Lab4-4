@@ -8,15 +8,20 @@ scanf("%f",&l1);
 printf("Enter L2 : ");
 scanf("%f",&l2);
 
-printf("Enter Height : ");
-scanf("%f",&h);
+per = ((l2-l1)/l1)*100;
+printf("Percent = %0.00f % \n",per);
 
-per = (l2/l1)*100;
-suml = l1+l2;
 
 if(per >=40 ){
-area = 0.5*h*suml;
-printf("Area is : %0.2f",area);
+  
+  printf("Enter Height : ");
+  scanf("%f",&h);
+  suml = l1+l2;
+  area = 0.5*h*suml;
+  printf("Area is : %0.2f",area);
+
+}else{
+  printf("error");
 }
 
 }
